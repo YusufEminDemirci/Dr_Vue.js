@@ -8,6 +8,10 @@
     <div class="about-me">
       <span>I am 24 years old, I live in Ankara / Turkey.</span>
       <span>
+        I graduated from Kırıkkale University, Department of Computer
+        Engineering.
+      </span>
+      <span>
         I have been working as a Front-End Developer at
         <a href="www.isimizbu.com.tr/">İŞİMİZBU A.Ş.</a> since september 2021.
       </span>
@@ -111,6 +115,15 @@ import Slack from "@/assets/logos/Slack.svg";
     & .name {
       font-weight: bolder;
       font-size: 35px;
+      padding-bottom: 7.5px;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $tertiary-color;
+      }
     }
 
     & .nick {
