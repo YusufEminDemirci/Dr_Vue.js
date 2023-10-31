@@ -16,6 +16,7 @@
         <span class="title">1.5K</span>
       </div>
     </nav>
+    <img class="wave" :src="Wave" alt="wave" />
     <router-view v-slot="{ Component, route }">
       <transition :name="route.meta.transition || 'fade'">
         <component :is="Component" />
@@ -26,6 +27,7 @@
 
 <script setup lang="ts">
 import NuxtLogo from "@/assets/Nuxt_Logo.svg";
+import Wave from "@/assets/Wave.svg";
 </script>
 
 <style scoped lang="scss">
@@ -38,6 +40,15 @@ import NuxtLogo from "@/assets/Nuxt_Logo.svg";
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  position: relative;
+
+  & .wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    z-index: -1;
+  }
 
   & nav {
     width: 100%;

@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <div class="welcome">
-      <img class="wave" :src="Wave" alt="wave" />
       <span class="title">Welcome, Developer</span>
       <div class="message">
         <span>
@@ -60,11 +59,6 @@ import Wave from "@/assets/Wave.svg";
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-
-    & .wave {
-      position: absolute;
-    }
 
     & .title {
       font-size: 50px;
