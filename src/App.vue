@@ -11,10 +11,6 @@
         <router-link to="/repos">Repos</router-link> |
         <router-link to="/about">About</router-link>
       </div>
-      <div class="right">
-        <font-awesome-icon :icon="['fab', 'github']" />
-        <span class="title">1.5K</span>
-      </div>
     </nav>
     <img class="wave" :src="Wave" alt="wave" />
     <router-view v-slot="{ Component, route }">
@@ -26,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import NuxtLogo from "@/assets/Nuxt_Logo.svg";
+import NuxtLogo from "@/assets/logos/Nuxt_Logo.svg";
 import Wave from "@/assets/Wave.svg";
 </script>
 
@@ -84,17 +80,8 @@ import Wave from "@/assets/Wave.svg";
       flex: 1;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    & .right {
-      width: 200px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
       justify-content: end;
-      gap: 10px;
+      gap: 15px;
     }
   }
 }
