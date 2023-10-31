@@ -20,55 +20,61 @@
       <div class="skills-container">
         <span class="title">Skills</span>
         <div class="skills">
-          <a class="skill" href="vuejs.org/">
+          <div class="skill">
             <img class="logo" :src="Vue" alt="vue.js" />
-            <span>Vue.Js</span>
-          </a>
-          <a class="skill" href="www.typescriptlang.org/">
+            <a href="https://www.vuejs.org/" target="_blank">Vue.Js</a>
+          </div>
+          <div class="skill">
             <img class="logo" :src="Typescript" alt="typescript" />
-            <span>Typescript</span>
-          </a>
-          <a class="skill" href="www.electronjs.org/">
+            <a href="https://www.typescriptlang.org/" target="_blank">
+              Typescript
+            </a>
+          </div>
+          <div class="skill">
             <img class="logo" :src="Electron" alt="electron.js" />
-            <span>Electron.js</span>
-          </a>
-          <a class="skill" href="www.javascript.com/">
+            <a href="https://www.electronjs.org/" target="_blank">
+              Electron.js
+            </a>
+          </div>
+          <div class="skill">
             <img class="logo" :src="Javascript" alt="javascript" />
-            <span>Javascript</span>
-          </a>
-          <a class="skill" href="jestjs.io/">
+            <a href="https://www.javascript.com/" target="_blank">Javascript</a>
+          </div>
+          <div class="skill">
             <img class="logo" :src="Jest" alt="jest" />
-            <span>Jest</span>
-          </a>
+            <a href="https://www.jestjs.io/" target="_blank">Jest</a>
+          </div>
         </div>
       </div>
       <div class="programs-container">
         <span class="title">Programs</span>
         <div class="programs">
-          <a class="program" href="www.jetbrains.com/webstorm/">
+          <div class="program">
             <img class="logo" :src="Jetbrains" alt="webstorm" />
-            <span>Webstorm</span>
-          </a>
-          <a class="program" href="www.warp.dev/">
+            <a href="https://www.jetbrains.com/webstorm/" target="_blank">
+              Webstorm
+            </a>
+          </div>
+          <div class="program">
             <img class="logo" :src="Warp" alt="warp" />
-            <span>Warp</span>
-          </a>
-          <a class="program" href="www.postman.com/">
+            <a href="https://www.warp.dev/" target="_blank">Warp</a>
+          </div>
+          <div class="program">
             <img class="logo" :src="Postman" alt="postman" />
-            <span>Postman</span>
-          </a>
-          <a class="program" href="www.figma.com/?fuid=">
+            <a href="https://www.postman.com/" target="_blank">Postman</a>
+          </div>
+          <div class="program">
             <img class="logo" :src="Figma" alt="figma" />
-            <span>Figma</span>
-          </a>
-          <a class="program" href="obsidian.md/">
+            <a href="https://www.figma.com/?fuid=" target="_blank">Figma</a>
+          </div>
+          <div class="program">
             <img class="logo" :src="Obsidian" alt="obsidian" />
-            <span>Obsidian</span>
-          </a>
-          <a class="program" href="slack.com/">
+            <a href="https://www.obsidian.md/" target="_blank">Obsidian</a>
+          </div>
+          <div class="program">
             <img class="logo" :src="Slack" alt="slack" />
-            <span>Slack</span>
-          </a>
+            <a href="https://www.slack.com/" target="_blank">Slack</a>
+          </div>
         </div>
       </div>
     </div>
