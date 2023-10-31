@@ -9,31 +9,30 @@
       <span>I am 24 years old, I live in Ankara / Turkey.</span>
       <span>
         I have been working as a Front-End Developer at
-        <a href="http://www.isimizbu.com.tr/">İŞİMİZBU A.Ş.</a> since september
-        2021.
+        <a href="www.isimizbu.com.tr/">İŞİMİZBU A.Ş.</a> since september 2021.
       </span>
     </div>
     <div class="content">
       <div class="skills-container">
         <span class="title">Skills</span>
         <div class="skills">
-          <a class="skill" href="https://vuejs.org/">
+          <a class="skill" href="vuejs.org/">
             <img class="logo" :src="Vue" alt="vue.js" />
             <span>Vue.Js</span>
           </a>
-          <a class="skill" href="https://www.typescriptlang.org/">
+          <a class="skill" href="www.typescriptlang.org/">
             <img class="logo" :src="Typescript" alt="typescript" />
             <span>Typescript</span>
           </a>
-          <a class="skill" href="https://www.electronjs.org/">
+          <a class="skill" href="www.electronjs.org/">
             <img class="logo" :src="Electron" alt="electron.js" />
             <span>Electron.js</span>
           </a>
-          <a class="skill" href="https://www.javascript.com/">
+          <a class="skill" href="www.javascript.com/">
             <img class="logo" :src="Javascript" alt="javascript" />
             <span>Javascript</span>
           </a>
-          <a class="skill" href="https://jestjs.io/">
+          <a class="skill" href="jestjs.io/">
             <img class="logo" :src="Jest" alt="jest" />
             <span>Jest</span>
           </a>
@@ -42,27 +41,27 @@
       <div class="programs-container">
         <span class="title">Programs</span>
         <div class="programs">
-          <a class="program" href="https://www.jetbrains.com/webstorm/">
+          <a class="program" href="www.jetbrains.com/webstorm/">
             <img class="logo" :src="Jetbrains" alt="webstorm" />
             <span>Webstorm</span>
           </a>
-          <a class="program" href="https://www.warp.dev/">
+          <a class="program" href="www.warp.dev/">
             <img class="logo" :src="Warp" alt="warp" />
             <span>Warp</span>
           </a>
-          <a class="program" href="https://www.postman.com/">
+          <a class="program" href="www.postman.com/">
             <img class="logo" :src="Postman" alt="postman" />
             <span>Postman</span>
           </a>
-          <a class="program" href="https://www.figma.com/?fuid=">
+          <a class="program" href="www.figma.com/?fuid=">
             <img class="logo" :src="Figma" alt="figma" />
             <span>Figma</span>
           </a>
-          <a class="program" href="https://obsidian.md/">
+          <a class="program" href="obsidian.md/">
             <img class="logo" :src="Obsidian" alt="obsidian" />
             <span>Obsidian</span>
           </a>
-          <a class="program" href="https://slack.com/">
+          <a class="program" href="slack.com/">
             <img class="logo" :src="Slack" alt="slack" />
             <span>Slack</span>
           </a>

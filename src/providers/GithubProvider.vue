@@ -1,10 +1,5 @@
 <template>
-  <Suspense timeout="0">
-    <slot :repos="repos" />
-    <template #fallback>
-      <div>Loading ...</div>
-    </template>
-  </Suspense>
+  <slot :repos="repos" />
 </template>
 
 <script setup lang="ts">

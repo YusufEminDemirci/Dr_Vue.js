@@ -1,10 +1,10 @@
 <template>
-  <MediumProvider v-slot="{ posts }">
-    <div v-if="posts" class="posts">
+  <div class="posts">
+    <MediumProvider v-slot="{ posts }">
       <span v-if="posts.length < 1"> No posts found... </span>
       <PostItem v-for="post in posts" :key="post.id" :post="post" />
-    </div>
-  </MediumProvider>
+    </MediumProvider>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -1,10 +1,5 @@
 <template>
-  <Suspense timeout="0">
-    <slot :posts="posts" :tags="tags" />
-    <template #fallback>
-      <div>Loading ...</div>
-    </template>
-  </Suspense>
+  <slot :posts="posts" :tags="tags" />
 </template>
 
 <script setup lang="ts">

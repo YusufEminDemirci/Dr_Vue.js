@@ -1,10 +1,10 @@
 <template>
-  <GithubProvider v-slot="{ repos }">
-    <div class="repos">
+  <div class="repos">
+    <GithubProvider v-slot="{ repos }">
       <span v-if="repos.length < 1"> No repos found... </span>
       <RepoItem v-for="repo in repos" :key="repo.id" :repo="repo" />
-    </div>
-  </GithubProvider>
+    </GithubProvider>
+  </div>
 </template>
 
 <script setup lang="ts">

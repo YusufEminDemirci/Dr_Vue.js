@@ -14,7 +14,7 @@
     </nav>
     <img class="wave" :src="Wave" alt="wave" />
     <router-view v-slot="{ Component, route }">
-      <transition :name="route.meta.transition || 'fade'">
+      <transition :name="route.meta.transition || 'fade'" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
