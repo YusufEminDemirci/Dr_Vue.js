@@ -2,7 +2,9 @@
   <div class="repos">
     <GithubProvider v-slot="{ repos }">
       <span v-if="repos.length < 1"> No repos found... </span>
-      <RepoItem v-for="repo in repos" :key="repo.id" :repo="repo" />
+      <transition-group name="fade" mode="out-in">
+        <RepoItem v-for="repo in repos" :key="repo.id" :repo="repo" />
+      </transition-group>
     </GithubProvider>
   </div>
 </template>
