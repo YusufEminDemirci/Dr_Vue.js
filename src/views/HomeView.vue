@@ -33,10 +33,6 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import Wave from "@/assets/Wave.svg";
-</script>
-
 <style scoped lang="scss">
 @import "@/assets/colors";
 
