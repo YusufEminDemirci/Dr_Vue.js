@@ -142,6 +142,7 @@ import Slack from "@/assets/logos/Slack.svg";
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    font-size: 18px;
   }
 
   & .content {
