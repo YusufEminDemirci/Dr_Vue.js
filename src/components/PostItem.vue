@@ -1,11 +1,13 @@
 <template>
   <div class="post-item">
-    <a class="title" :href="post.url" target="_blank">{{ post.title }}</a>
-    <div class="date">
-      <font-awesome-icon :icon="['far', 'calendar-days']" />
-      {{ new Date(post.date).toLocaleString() }}
+    <div class="body">
+      <a class="title" :href="post.url" target="_blank">{{ post.title }}</a>
+      <div class="date">
+        <font-awesome-icon :icon="['far', 'calendar-days']" />
+        {{ new Date(post.date).toLocaleString() }}
+      </div>
     </div>
-    <div class="categories">
+    <div class="footer">
       <div
         class="category"
         v-for="category in post.categories"
@@ -33,39 +35,62 @@ defineProps({
 @import "@/assets/colors";
 
 .post-item {
-  width: 75%;
+  width: 100%;
+  height: max-content;
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 10px;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  background-color: $secondary-color;
 
-  & .title {
-    color: $tertiary-color;
-    text-decoration-line: none;
-    font-size: 20px;
+  &:hover {
+    border-color: $tertiary-color;
+    cursor: pointer;
   }
 
-  & .date {
-    color: #54657e;
-    font-size: 14px;
-    font-style: italic;
+  & .body {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
     gap: 10px;
+    padding: 15px;
+    background-color: $secondary-color;
 
-    i {
-      font-size: 18px;
-      color: #54657e !important;
+    & .title {
+      color: $tertiary-color;
+      text-decoration-line: none;
+      font-size: 20px;
+    }
+
+    & .date {
+      color: #54657e;
+      font-size: 14px;
+      font-style: italic;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+
+      i {
+        font-size: 18px;
+        color: #54657e !important;
+      }
     }
   }
 
-  & .categories {
+  & .footer {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     gap: 15px;
+    background-color: $secondary-color-light;
+    padding: 15px;
 
     & .category {
       border-radius: 5px;

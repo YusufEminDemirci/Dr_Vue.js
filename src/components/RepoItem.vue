@@ -1,16 +1,12 @@
 <template>
   <div class="gh-item">
-    <div class="left">
+    <div class="body">
       <a class="title" :href="repo.html_url" target="_blank">{{ repo.name }}</a>
-      <div class="date">
-        <font-awesome-icon :icon="['far', 'calendar-days']" />
-        {{ new Date(repo.pushed_at).toLocaleString() }}
-      </div>
       <div class="description">
-        {{ repo.description || "No description..." }}
+        {{ repo.description || "No description." }}
       </div>
     </div>
-    <div class="right">
+    <div class="footer">
       <div class="fork">
         <i class="fa-solid fa-code-fork" />
         <font-awesome-icon :icon="['fas', 'code-fork']" />
@@ -40,19 +36,30 @@ defineProps({
 @import "@/assets/colors";
 
 .gh-item {
-  width: 75%;
+  width: 100%;
+  height: max-content;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: start;
-  justify-content: space-between;
-  gap: 10px;
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
 
-  & .left {
+  &:hover {
+    border-color: $tertiary-color;
+    cursor: pointer;
+  }
+
+  & .body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     gap: 10px;
+    padding: 15px;
+    background-color: $secondary-color;
 
     & .title {
       color: $tertiary-color;
@@ -60,32 +67,19 @@ defineProps({
       font-size: 20px;
     }
 
-    & .date {
-      color: #54657e;
-      font-size: 14px;
-      font-style: italic;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-
-      i {
-        font-size: 18px;
-        color: #54657e !important;
-      }
-    }
-
     & .description {
       font-size: 15px;
     }
   }
 
-  & .right {
-    height: 100%;
+  & .footer {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: start;
     gap: 15px;
+    background-color: $secondary-color-light;
+    padding: 15px;
 
     & .fork,
     & .star {

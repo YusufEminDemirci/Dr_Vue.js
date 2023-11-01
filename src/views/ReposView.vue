@@ -17,10 +17,8 @@ import RepoItem from "@/components/RepoItem.vue";
 <style scoped lang="scss">
 .repos {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 60px;
 }
